@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
 public class HomeController {
-    @GetMapping("/index")
+    @GetMapping("/login")
     public String homePage(){
         //truyền một giá trị từ controller sang jsp
 //        model.addAttribute("username","ph19187");

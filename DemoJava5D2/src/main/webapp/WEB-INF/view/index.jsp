@@ -4,13 +4,12 @@
     <title>DEMO DAY 2</title>
 </head>
 <body>
-<h1>FPT Polytechnic</h1>
-<br>
+<h1>Login</h1>
 <form method="POST" action="/ket-qua">
-    <input type="text" placeholder="Họ Tên" name="user">
-    <input type="password" placeholder="Mật khẩu" name="pass">
+    <p>Username: <input type="text" placeholder="Họ Tên" name="user"></p>
+    <p>Password: <input type="password" placeholder="Mật khẩu" name="pass"></p>
     <br>
-    <button type="submit">Ok</button>
+    <button type="submit">Submit</button>
 </form>
 <h3>${input}</h3>
 <br>
