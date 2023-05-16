@@ -53,4 +53,13 @@ public class GiangVienController {
         model.addAttribute("giangViens", lists);
         return "giang-vien";
     }
+
+    @GetMapping("/giang-vien/update/{ma}")
+    public String updateGiangVien(Model model, @PathVariable("ma") String ma){
+        GiangVien giangVien = giangVienService.detailGiangVien(ma);
+        model.addAttribute("gv",giangVien);
+        return "update-giang-vien";
+    }
+
+
 }

@@ -33,4 +33,33 @@ public class SinhVienServiceImpl implements SinhVienService {
         }
         return null;
     }
+
+    @Override
+    public List<SinhVien> removeSinhVien(String ma) {
+        SinhVien sv = null;
+        for (SinhVien gv : lists) {
+            if (gv.getMssv().equalsIgnoreCase(ma)) {
+                sv = gv;
+                break;
+            }
+        }
+        if (sv != null) {
+            lists.remove(sv);
+        }
+        return lists;
+    }
+    //cách 1 remove
+
+    @Override
+    public void deleteSinhVien(String ma) {
+        SinhVien sinhVien = detailSinhVien(ma);
+        lists.remove(sinhVien);
+    }
+    //cách 2 remove
+
+    @Override
+    public void addSinhVien(SinhVien sinhVienh) {
+        lists.add(sinhVienh);
+
+    }
 }

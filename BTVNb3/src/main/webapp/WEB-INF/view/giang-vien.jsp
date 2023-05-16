@@ -37,7 +37,7 @@
                 <td>${item.diaChi}</td>
                 <td>
                     <a href="/giang-vien/detail/${item.ma}"><button>Detail</button></a>
-                    <a href="/giang-vien/view-update/${mssv.ma}"><button>Edit</button></a>
+                    <a href="/giang-vien/update/${item.ma}"><button>Edit</button></a>
                     <a href="/giang-vien/delete/${item.id}"><button>Remove</button></a>
                 </td>
             </tr>

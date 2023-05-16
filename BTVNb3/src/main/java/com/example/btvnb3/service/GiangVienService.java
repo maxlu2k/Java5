@@ -10,4 +10,6 @@ GiangVien detailGiangVien(String ma);
 List<GiangVien> findByTen(String ten);
 List<GiangVien> deleteById(String id);
 List<GiangVien> findByGioiTinh();
+
+
 }
