@@ -11,7 +11,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Controller
-@RequestMapping("/sinh-vien/")
 public class SinhVienController {
     private SinhVienService sinhVienService = new SinhVienServiceImpl();
     //interface new class
