@@ -49,16 +49,16 @@ public class GiangVienServiceImpl implements GiangVienService {
 
     @Override
     public List<GiangVien> deleteById(String id) {
-        GiangVien gvToDelete = null;
-        for (GiangVien gv : lists) {
-            if (gv.getId().equalsIgnoreCase(id)) {
-                gvToDelete = gv;
-                break;
-            }
-        }
-        if (gvToDelete != null) {
-            lists.remove(gvToDelete);
-        }
+//        GiangVien gvToDelete = null;
+//        for (GiangVien gv : lists) {
+//            if (gv.getId().equalsIgnoreCase(id)) {
+//                gvToDelete = gv;
+//                break;
+//            }
+//        }
+//        if (gvToDelete != null) {
+//            lists.remove(gvToDelete);
+//        }
         return lists;
     }
 
@@ -71,6 +71,26 @@ public class GiangVienServiceImpl implements GiangVienService {
             }
         }
         return result;
+    }
+
+    @Override
+    public void deleteGiangVien(String ma) {
+        GiangVien giangVien = detailGiangVien(ma);
+        lists.remove(giangVien);
+    }
+
+    @Override
+    public void addGiangVien(GiangVien giangVien) {
+        lists.add(giangVien);
+    }
+
+    @Override
+    public void updateGiangVien(GiangVien giangVien) {
+//        GiangVien gvUpdate = detailGiangVien(giangVien.getMa());
+//        if (gvUpdate != null) {
+//            int index = lists.indexOf(gvUpdate);
+//            lists.set(index, giangVien);
+//        }
     }
 
 }
