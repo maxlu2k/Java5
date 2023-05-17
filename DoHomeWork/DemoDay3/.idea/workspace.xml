@@ -5,28 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6d0e5885-3567-431d-b44b-4978ed7c5af3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../DemoJava5D3/src/main/java/com/example/demojava5d3/controller/SinhVienController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../DemoJava5D3/src/main/java/com/example/demojava5d3/entity/SinhVien.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../DemoJava5D3/src/main/java/com/example/demojava5d3/service/SinhVienService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../DemoJava5D3/src/main/java/com/example/demojava5d3/service/impl/SinhVienServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../heloooo/src/main/java/com/example/demoday3/controller/SinhVienController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../heloooo/src/main/java/com/example/demoday3/entity/SinhVien.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../heloooo/src/main/java/com/example/demoday3/service/SinhVienService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../heloooo/src/main/java/com/example/demoday3/service/impl/SinhVienServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../heloooo/src/main/webapp/WEB-INF/view/sinhviens.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../heloooo/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../../heloooo/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../heloooo/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/../../heloooo/mvnw" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/../../heloooo/mvnw.cmd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../heloooo/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demoday3/DemoDay3Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../heloooo/src/main/java/com/example/demoday3/helooooApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../heloooo/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/add-sinh-vien.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../heloooo/src/main/webapp/WEB-INF/view/add-sinh-vien.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/detail-sinh-vien.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../heloooo/src/main/webapp/WEB-INF/view/detail-sinh-vien.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/sinhviens.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/update-sinh-vien.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../heloooo/src/main/webapp/WEB-INF/view/update-sinh-vien.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/demoday3/DemoDay3ApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../heloooo/src/test/java/com/example/demoday3/helooooApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../BTVNb3/src/main/webapp/WEB-INF/view/view-add-giang-vien.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BTVNb3/src/main/java/com/example/btvnb3/controller/GiangVienController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../BTVNb3/src/main/java/com/example/btvnb3/controller/GiangVienController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BTVNb3/src/main/java/com/example/btvnb3/entity/GiangVien.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../BTVNb3/src/main/java/com/example/btvnb3/entity/GiangVien.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BTVNb3/src/main/java/com/example/btvnb3/service/GiangVienService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../BTVNb3/src/main/java/com/example/btvnb3/service/GiangVienService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BTVNb3/src/main/java/com/example/btvnb3/service/impl/GiangVienServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../BTVNb3/src/main/java/com/example/btvnb3/service/impl/GiangVienServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BTVNb3/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../BTVNb3/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BTVNb3/src/main/webapp/WEB-INF/view/giang-vien.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../BTVNb3/src/main/webapp/WEB-INF/view/giang-vien.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BTVNb3/src/main/webapp/WEB-INF/view/update-giang-vien.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../BTVNb3/src/main/webapp/WEB-INF/view/update-giang-vien.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DemoJava5D3/src/main/java/com/example/demojava5d3/controller/SinhVienController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../DemoJava5D3/src/main/java/com/example/demojava5d3/controller/SinhVienController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DemoJava5D3/src/main/java/com/example/demojava5d3/entity/SinhVien.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../DemoJava5D3/src/main/java/com/example/demojava5d3/entity/SinhVien.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DemoJava5D3/src/main/java/com/example/demojava5d3/service/SinhVienService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../DemoJava5D3/src/main/java/com/example/demojava5d3/service/SinhVienService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DemoJava5D3/src/main/java/com/example/demojava5d3/service/impl/SinhVienServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../DemoJava5D3/src/main/java/com/example/demojava5d3/service/impl/SinhVienServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DemoJava5D3/src/main/webapp/WEB-INF/view/sinhviens.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../DemoJava5D3/src/main/webapp/WEB-INF/view/sinhviens.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DemoJava5D3/src/main/webapp/WEB-INF/view/update-sinh-vien.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../DemoJava5D3/src/main/webapp/WEB-INF/view/update-sinh-vien.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,13 +59,13 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "F:/intellijwork/Java5/DoHomeWork/DemoDay3",
+    "last_opened_file_path": "F:/intellijwork/Java5/DoHomeWork/BTDay2",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "settings.editor.selected.configurable": "preferences.sourceCode.Java",
-    "spring.configuration.checksum": "43a4c855d3f5b7de3118374c2b88d9d2",
+    "spring.configuration.checksum": "8c13897af2ff1b637fcc8f48e9fb22be",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -83,29 +75,6 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="GroovyScriptRunConfiguration" factoryName="Groovy">
-      <setting name="path" value="" />
-      <setting name="vmparams" value="" />
-      <setting name="params" value="" />
-      <setting name="workDir" value="file://$PROJECT_DIR$" />
-      <setting name="debug" value="false" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="heloooo" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="heloooo" />
-      <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="helooooApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="heloooo" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.demoday3.helooooApplication" />
@@ -125,6 +94,7 @@
       <workItem from="1683869647407" duration="6920000" />
       <workItem from="1683895069518" duration="22000" />
       <workItem from="1684009196513" duration="1123000" />
+      <workItem from="1684245954728" duration="30000" />
     </task>
     <servers />
   </component>

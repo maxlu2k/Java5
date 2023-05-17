@@ -1,10 +1,3 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: hangnt
-  Date: 22/01/2023
-  Time: 12:58
-  To change this template use File | Settings | File Templates.
---%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -12,21 +5,24 @@
 </head>
 <body>
 
-<form action="">
-    MSSV: <input type="text" name="mssv"/>
+<form action="/giang-vien/add" method="post">
+    MSSV: <input type="text" name="ma"/>
+    <span style="color: red">${errStatus}</span>
     <br/>
     Tên: <input type="text" name="ten"/>
+    <span style="color: red">${errStatus}</span>
     <br/>
     Tuổi: <input type="text" name="tuoi"/>
+    <span style="color: red">${errStatus} ${errStatusTuoi}</span>
     <br/>
     Địa chỉ: <input type="text" name="diaChi"/>
+    <span style="color: red">${errStatus}</span>
     <br/>
     Giới tính:
     <input type="radio" name="gioiTinh" checked value="true"/>Nam
     <input type="radio" name="gioiTinh" value="false"/>Nữ
     <br/>
-    <button>Update</button>
+    <button type="submit">Add</button>
 </form>
-
 </body>
 </html>

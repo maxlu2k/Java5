@@ -12,7 +12,7 @@ import lombok.Setter;
 @Setter
 @Builder //có thể tạo ra contructor có nhiều tham số
 public class SinhVien {
-    private String mssv,ten;
+    private String mssv, ten;
     private Integer tuoi;
     private String diaChi;
     private Boolean gioiTinh;

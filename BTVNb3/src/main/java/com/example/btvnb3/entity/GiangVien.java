@@ -10,17 +10,18 @@ import lombok.Setter;
 @AllArgsConstructor
 @Getter
 @Setter
+@Builder
 //@Builder(builderMethodName = "hiddenBuilder")
 public class GiangVien {
     private static int nextId = 1;
-    private String id;
-    private String ma,ten;
+    private Integer id;
+    private String ma, ten;
     private Integer tuoi;
     private Boolean gioiTinh;
     private String diaChi;
 
     public GiangVien(String ma, String ten, Integer tuoi, Boolean gioiTinh, String diaChi) {
-        this.id = ""+nextId++;
+        this.id = nextId++;
         this.ma = ma;
         this.ten = ten;
         this.tuoi = tuoi;

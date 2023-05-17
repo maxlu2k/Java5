@@ -8,10 +8,10 @@
     <form action="/giang-vien/search" method="GET" style="border: 1px solid black; max-width: 300px;padding: 10px; margin: 0px">
         Tên: <input name="ten"/>
         <br>
-        <button type="submit">Submit</button>
+        <button type="submit">Search</button>
     </form>
     <div style="padding: 9px">
-    <button>Add</button>
+        <a href="/giang-vien/view-add"><button>Add</button></a>
         <a href="/giang-vien/giang-vien-nu"><button>Giảng viên nữ</button></a>
     </div>
     <table>
@@ -37,8 +37,8 @@
                 <td>${item.diaChi}</td>
                 <td>
                     <a href="/giang-vien/detail/${item.ma}"><button>Detail</button></a>
-                    <a href="/giang-vien/update/${item.ma}"><button>Edit</button></a>
-                    <a href="/giang-vien/delete/${item.id}"><button>Remove</button></a>
+                    <a href="/giang-vien/view-update/${item.ma}"><button>Edit</button></a>
+                    <a href="/giang-vien/delete/${item.ma}"><button>Remove</button></a>
                 </td>
             </tr>
         </c:forEach>
