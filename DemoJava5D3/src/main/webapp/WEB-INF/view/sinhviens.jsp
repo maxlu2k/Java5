@@ -12,7 +12,7 @@
         <button type="submit">Search</button>
     </form>
     <br/>
-    <button><a href="/sinh-vien/view-add">Add Student</a></button>
+    <a href="/sinh-vien/view-add"><button>Add Student</button></a>
     <tr>
         <th>STT</th>
         <th>MSSV</th>
