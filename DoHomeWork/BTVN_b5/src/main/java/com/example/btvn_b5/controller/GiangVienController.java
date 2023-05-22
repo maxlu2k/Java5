@@ -57,7 +57,6 @@ public class GiangVienController {
     }
     @PostMapping("update")
     public String updateGiangVien(){
-
         return "redirect:/giang-vien/hien-thi-tat-ca";
     }
 

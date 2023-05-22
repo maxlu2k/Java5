@@ -1,5 +1,5 @@
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
-<%@ taglib prefix = "c" uri = "http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -10,15 +10,22 @@
     <p>Tên: <input type="text" name="ten1"></p>
     <p>Số tuổi Min: <input type="text" name="min"></p>
     <p>Số tuổi Max: <input type="text" name="max"></p>
-    <a href=""><button type="submit">Search</button></a>
+    <a href="">
+        <button type="submit">Search</button>
+    </a>
 </form>
 <form:form action="/thuc-vat/add" method="post" modelAttribute="tv1">
     <p>ID: <form:input path="id"/></p>
-<p>Loại cây:  <form:input path="loaiCay"/></p>
-<p>Tên: <form:input path="ten"/></p>
-<p>Tuổi: <form:input path="tuoi"/></p>
-<p>Giới tính: <form:radiobutton path="gioiTinh"/> Nam | <form:radiobutton path="gioiTinh"/> Nữ</p>
-<p>Khu vực: <form:input path="khuVuc"/></p>
+    <p>Loại cây: <form:input path="loaiCay"/></p>
+    <span><form:errors path="loaiCay"/> </span>
+    <p>Tên: <form:input path="ten"/></p>
+    <span><form:errors path="ten"/> </span>
+    <p>Tuổi: <form:input path="tuoi"/></p>
+    <span><form:errors path="tuoi"/> </span>
+    <p>Giới tính: <form:radiobutton path="gioiTinh" value="true" checked="true"/> Nam | <form:radiobutton
+            path="gioiTinh" value="false"/> Nữ</p>
+    <p>Khu vực: <form:input path="khuVuc"/></p>
+    <span><form:errors path="khuVuc"/> </span>
     <form:button>Add</form:button>
 </form:form>
 <br>
@@ -32,19 +39,23 @@
         <th>Giới tính</th>
         <th>Action</th>
     </tr>
-    <c:forEach  var="items" items="${tv}">
-    <tr>
-        <td>${items.id}</td>
-        <td>${items.ten}</td>
-        <td>${items.loaiCay}</td>
-        <td>${items.tuoi}</td>
-        <td>${items.khuVuc}</td>
-        <td>${items.gioiTinh}</td>
-        <td colspan="2">
-            <a href=""><button>Update</button></a>
-            <a href=""><button>Remove</button></a>
-        </td>
-    </tr>
+    <c:forEach var="items" items="${tv}">
+        <tr>
+            <td>${items.id}</td>
+            <td>${items.ten}</td>
+            <td>${items.loaiCay}</td>
+            <td>${items.tuoi}</td>
+            <td>${items.khuVuc}</td>
+            <td>${items.gioiTinh}</td>
+            <td colspan="2">
+                <a href="/thuc-vat/update/">
+                    <button>Update</button>
+                </a>
+                <a href="/thuc-vat/delete/${items.id}">
+                    <button>Remove</button>
+                </a>
+            </td>
+        </tr>
     </c:forEach>
 </table>
 </body>

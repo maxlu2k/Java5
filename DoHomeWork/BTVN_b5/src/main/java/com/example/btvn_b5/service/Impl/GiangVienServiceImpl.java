@@ -67,7 +67,6 @@ public class GiangVienServiceImpl implements GiangVienService {
         return result;
     }
 
-
     @Override
     public void addGV(GiangVien giangVien) {
         lists.add(giangVien);
