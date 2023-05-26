@@ -57,16 +57,16 @@
             <artifactId>spring-boot-starter-validation</artifactId>
         </dependency>
         <!--Hibernate-->
-        <dependency>
-            <groupId>org.hibernate</groupId>
-            <artifactId>hibernate-core-jakarta</artifactId>
-            <version>5.6.10.Final</version>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>org.hibernate</groupId>-->
+<!--            <artifactId>hibernate-core-jakarta</artifactId>-->
+<!--            <version>5.6.10.Final</version>-->
+<!--        </dependency>-->
         <!--SQL SERVER-->
         <dependency>
             <groupId>com.microsoft.sqlserver</groupId>
             <artifactId>mssql-jdbc</artifactId>
-            <version>9.4.1.jre16</version>
+            <version>12.2.0.jre11</version>
         </dependency>
         <!-- JPA-->
         <dependency>

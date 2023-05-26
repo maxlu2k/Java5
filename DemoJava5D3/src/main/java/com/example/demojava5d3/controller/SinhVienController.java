@@ -3,11 +3,14 @@ package com.example.demojava5d3.controller;
 import com.example.demojava5d3.entity.SinhVien;
 import com.example.demojava5d3.service.SinhVienService;
 import com.example.demojava5d3.service.impl.SinhVienServiceImpl;
-import jakarta.validation.Valid;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.validation.annotation.Validated;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -78,7 +81,7 @@ public class SinhVienController {
     }
 
     @PostMapping("add")
-    public String addSinhVien(@Valid @ModelAttribute("sv1") SinhVien sinhVien, BindingResult result){
+    public String addSinhVien(@Validated @ModelAttribute("sv1") SinhVien sinhVien, BindingResult result){
         //nếu mà có lỗi =>hashError = true => trang add
         if(result.hasErrors()){
             return "/buoi5/add-sinh-vien";
