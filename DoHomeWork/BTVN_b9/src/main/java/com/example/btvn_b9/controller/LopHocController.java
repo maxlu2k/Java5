@@ -25,7 +25,6 @@ public class LopHocController {
         return "page";
     }
 
-
     @GetMapping("page")
     public String phanTrang(@ModelAttribute("lh") LopHoc lopHoc, @RequestParam(value = "p", defaultValue = "0") Integer pageNo, Model model) {
         Page<LopHoc> lops = service.pTrang(pageNo, 5);

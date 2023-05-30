@@ -22,8 +22,7 @@ public class CategoryController {
 
     @GetMapping("/ccccc")
     public String hienThi(Model model) {
-        list = service.getAll();
-        model.addAttribute("ct", list);
+        model.addAttribute("ct", service.getAll());
         return "view";
     }
     @ResponseBody
@@ -31,5 +30,6 @@ public class CategoryController {
     public Page<Category> phanTrang(@RequestParam(value = "pageNo",defaultValue = "0")Integer pageNo){
         return service.phanTrang(pageNo,2);
     }
+
 
 }
