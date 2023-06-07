@@ -39,7 +39,7 @@
         <div class="form-group">
             <label>Trạng thái:</label>
             <div class="form-check">
-                <form:radiobutton path="trangThai" value="1" class="form-check-input" id="trangThai1"/>
+                <form:radiobutton path="trangThai" value="1" checked="true" class="form-check-input" id="trangThai1"/>
                 <label for="trangThai1" class="form-check-label">Hoạt động</label>
             </div>
             <div class="form-check">

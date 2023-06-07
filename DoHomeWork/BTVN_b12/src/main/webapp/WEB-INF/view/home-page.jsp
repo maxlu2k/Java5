@@ -65,7 +65,7 @@
     </c:if>
     <nav aria-label="Page navigation example">
         <ul class="pagination">
-            <li class="page-item">
+            <li class="page-item d-flex">
                 <c:forEach begin="0" end="${listCs.totalPages -1}" varStatus="loop">
                     <a class="page-link" href="/co-so/hien-thi-table?pageNo=${loop.begin + loop.count -1}">
                         ${loop.begin + loop.count}
@@ -73,22 +73,16 @@
                 </c:forEach>
 
             </li>
-<%--            <li class="page-item"><a class="page-link" href="#">Previous</a></li>--%>
-<%--            <li class="page-item"><a class="page-link" href="#">1</a></li>--%>
-<%--            <li class="page-item"><a class="page-link" href="#">2</a></li>--%>
-<%--            <li class="page-item"><a class="page-link" href="#">3</a></li>--%>
-<%--            <li class="page-item"><a class="page-link" href="#">Next</a></li>--%>
         </ul>
     </nav>
     <div>
-        <c:if test="${lops.number != 0}">
-            <a href="/lop-hoc/page?p=${lops.number - 1}">
+        <c:if test="${listCs.number != 0}">
+            <a href="/co-so/hien-thi-table?pageNo=${listCs.number - 1}">
                 <button>Pre</button>
             </a>
         </c:if>
-
-        <c:if test="${lops.hasNext()}">
-            <a href="/lop-hoc/page?p=${lops.number + 1}">
+        <c:if test="${listCs.hasNext()}">
+            <a href="/co-so/hien-thi-table?pageNo=${listCs.number + 1}">
                 <button>Next</button>
             </a>
         </c:if>
