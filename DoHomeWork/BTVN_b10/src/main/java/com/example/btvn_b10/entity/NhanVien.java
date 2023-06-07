@@ -13,19 +13,19 @@ import java.util.Date;
 @Getter
 @Setter
 @Entity
-@Table(name = "NhanVien")
+@Table(name = "nhan_vien")
 public class NhanVien {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "Id")
+    @Column(name = "id")
     private Long id;
-    @Column(name = "Ma")
+    @Column(name = "ho")
     private String ma;
-    @Column(name = "Ten")
+    @Column(name = "ten")
     private String ten;
-    @Column(name = "TenDem")
+    @Column(name = "tendem")
     private String tenDem;
-    @Column(name = "GioiTinh")
+    @Column(name = "gioitinh")
     private String gioiTinh;
     @Column(name = "NgaySinh")
     private Date ngaySinh;
@@ -36,13 +36,15 @@ public class NhanVien {
     @Column(name = "MatKhau")
     private String matKhau;
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "IdCH",referencedColumnName = "id")
+    @JoinColumn(name = "IdCH",referencedColumnName = "Id")
     private CuaHang cuaHang;
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "IdCV",referencedColumnName = "id")
+    @JoinColumn(name = "IdCV",referencedColumnName = "Id")
     private ChucVu chucVu;
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "IdGuiBC")
+    private NhanVien guiBaoCao;
     @Column(name = "TrangThai")
     private Integer trangThai;
-
 
 }

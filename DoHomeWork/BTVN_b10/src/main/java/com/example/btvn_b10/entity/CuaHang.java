@@ -27,5 +27,4 @@ public class CuaHang {
     private String thanhPho;
     @Column(name = "QuocGia")
     private String quocGua;
-
 }

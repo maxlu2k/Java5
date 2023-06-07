@@ -21,5 +21,5 @@ public class ChucVu {
     private String ma;
     @Column(name = "Ten")
     private String ten;
-
+//e đang sửa lỗi tên ánh xạ
 }

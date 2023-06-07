@@ -21,19 +21,27 @@
 <br>
 <table>
     <tr>
-        <th>ID Lớp Hoc</th>
-        <th>Tên Lớp Học</th>
-        <th>Địa Điểm Lớp Học</th>
+        <th>#</th>
+        <th>Mã</th>
+        <th>Họ và tên</th>
+        <th>Giới tính</th>
+        <th>Tuổi</th>
+        <th>Chức vụ</th>
+        <th>Cửa hàng</th>
         <th>Action</th>
     </tr>
-    <c:forEach var="it" items="${lops.content}">
+    <c:forEach var="it" items="${listNhanVien}" varStatus="loop">
         <tr>
-            <td>${it.id}</td>
-            <td>${it.name}</td>
-            <td>${it.diaDiemLopHoc}</td>
+            <td>${loop.index}</td>
+            <td>${it.ma}</td>
+            <td>${it.ten}</td>
+            <td>${it.gioiTinh}</td>
+            <td>${it.ngaySinh}</td>
+            <td>${it.ten}</td>
+            <td>${it.ten}</td>
             <td colspan="2">
-                <a href="/lop-hoc/update/${it.id}"><button>Edit</button></a>
-                <a href="/lop-hoc/remove/${it.id}"><button>Remove</button></a>
+                <a href="/lop-hoc/update/${it.ma}"><button>Edit</button></a>
+                <a href="/lop-hoc/remove/${it.ma}"><button>Remove</button></a>
             </td>
         </tr>
     </c:forEach>
